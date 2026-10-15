@@ -1,147 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work From Home</title>
-    
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '4380613462223935');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=4380613462223935&ev=PageView&noscript=1"
-    /></noscript>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-        }
-        .card {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            max-width: 400px;
-            width: 100%;
-            padding: 30px;
-            text-align: center;
-        }
-        .header-text {
-            color: #d32f2f;
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .logo-container {
-            width: 150px;
-            height: 150px;
-            margin: 0 auto 25px;
-            border-radius: 50%;
-            border: 4px solid #4caf50;
-            overflow: hidden;
-        }
-        .logo-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .features {
-            text-align: left;
-            margin-bottom: 30px;
-        }
-        .feature-item {
-            margin: 15px 0;
-            font-size: 16px;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-        }
-        .check-icon {
-            color: #4caf50;
-            font-weight: bold;
-        }
-        .btn-telegram {
-            background-color: #0088cc;
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 18px;
-            box-shadow: 0 4px 10px rgba(0, 136, 204, 0.3);
-            transition: transform 0.2s;
-        }
-        .btn-telegram:active {
-            transform: scale(0.98);
-        }
-        .telegram-icon {
-            width: 24px;
-            margin-right: 10px;
-        }
-        .footer-note {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #666;
-        }
-        .fire {
-            margin-right: 5px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>3 piont trader</title>
+
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s)
+{
+if(f.fbq)return;
+
+n=f.fbq=function(){
+n.callMethod ?
+n.callMethod.apply(n,arguments) :
+n.queue.push(arguments)
+};
+
+if(!f._fbq)f._fbq=n;
+
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s);
+
+}
+(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1040048958862150');
+fbq('track','PageView');
+</script>
+
+<noscript>
+<img
+height="1"
+width="1"
+style="display:none"
+src="https://www.facebook.com/tr?id=1040048958862150&ev=PageView&noscript=1">
+</noscript>
+
+
+<style>
+
+/* ================= RESET ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    min-height:100%;
+}
+
+
+/* ================= BODY ================= */
+
+body{
+    background:#050505;
+    color:#ffffff;
+    font-family:Arial,Helvetica,sans-serif;
+
+    padding:10px 7px;
+}
+
+
+/* ================= MAIN CARD ================= */
+
+.card{
+    width:100%;
+    max-width:470px;
+
+    min-height:calc(100vh - 20px);
+
+    margin:0 auto;
+
+    padding:26px 14px 20px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    background:
+    radial-gradient(
+        circle at 50% 15%,
+        rgba(255,215,0,0.06),
+        transparent 30%
+    ),
+    linear-gradient(
+        145deg,
+        #181d1f 0%,
+        #111516 55%,
+        #0b0b0b 100%
+    );
+
+    border:1px solid rgba(255,215,0,0.28);
+
+    border-radius:20px;
+
+    box-shadow:
+    0 0 25px rgba(255,215,0,0.05);
+}
+
+
+/* ================= PROFILE PHOTO ================= */
+
+.profile{
+    width:84px;
+    height:84px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:2px solid #ffd21c;
+
+    background:#1b1b1b;
+
+    box-shadow:
+    0 0 16px rgba(255,210,28,0.35);
+
+    margin-bottom:17px;
+}
+
+
+/* ================= TITLE ================= */
+
+.title{
+    color:#ffd21c;
+
+    font-size:19px;
+
+    line-height:1.25;
+
+    font-weight:700;
+
+    letter-spacing:0.3px;
+
+    text-align:center;
+
+    margin-bottom:8px;
+}
+
+
+/* ================= SUBTITLE ================= */
+
+.subtitle{
+    color:#ffffff;
+
+    font-size:13px;
+
+    line-height:1.4;
+
+    font-weight:600;
+
+    text-align:center;
+
+    margin-bottom:7px;
+}
+
+
+/* ================= MARKET ================= */
+
+.market{
+    color:#aeb2b4;
+
+    font-size:10.5px;
+
+    line-height:1.4;
+
+    letter-spacing:0.3px;
+
+    text-align:center;
+
+    margin-bottom:19px;
+}
+
+
+/* ================= TELEGRAM BUTTON ================= */
+
+.telegram{
+    width:90%;
+
+    max-width:370px;
+
+    min-height:47px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 13px;
+
+    border-radius:25px;
+
+    background:
+    linear-gradient(
+        100deg,
+        #18b9ef,
+        #1687e8
+    );
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    text-align:center;
+
+    font-size:12.5px;
+
+    font-weight:700;
+
+    box-shadow:
+    0 7px 20px rgba(0,174,255,0.20);
+
+    margin-bottom:19px;
+
+    transition:transform 0.2s ease;
+}
+
+.telegram:hover{
+    transform:translateY(-1px);
+}
+
+.telegram:active{
+    transform:scale(0.97);
+}
+
+
+/* ================= FEATURES ================= */
+
+.features{
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:7px;
+
+    color:#d0d0d0;
+
+    font-size:10.5px;
+
+    line-height:1.4;
+
+    text-align:center;
+}
+
+
+/* ================= WARNING ================= */
+
+.warning{
+    width:100%;
+
+    margin-top:18px;
+
+    color:#858585;
+
+    font-size:8.5px;
+
+    line-height:1.45;
+
+    text-align:center;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer{
+    width:90%;
+
+    max-width:370px;
+
+    margin-top:16px;
+
+    padding:9px 8px;
+
+    border:1px solid rgba(150,150,150,0.20);
+
+    border-radius:8px;
+
+    color:#999999;
+
+    font-size:9.5px;
+
+    text-align:center;
+}
+
+
+/* ================= YASH ADS ================= */
+
+.footer a{
+    color:#19b8f1;
+
+    text-decoration:none;
+
+    font-weight:700;
+}
+
+.footer a:active{
+    opacity:0.75;
+}
+
+
+/* ================= VERY SMALL MOBILE ================= */
+
+@media(max-width:360px){
+
+    body{
+        padding:7px 5px;
+    }
+
+    .card{
+        padding:23px 11px 18px;
+
+        border-radius:18px;
+    }
+
+    .profile{
+        width:78px;
+        height:78px;
+
+        margin-bottom:15px;
+    }
+
+    .title{
+        font-size:17px;
+    }
+
+    .subtitle{
+        font-size:12px;
+    }
+
+    .market{
+        font-size:9.5px;
+    }
+
+    .telegram{
+        width:94%;
+
+        min-height:45px;
+
+        font-size:12px;
+    }
+
+    .features{
+        font-size:9.5px;
+    }
+
+    .warning{
+        font-size:8px;
+    }
+
+    .footer{
+        font-size:9px;
+    }
+}
+
+
+/* ================= DESKTOP ================= */
+
+@media(min-width:700px){
+
+    body{
+        padding:25px 15px;
+    }
+
+    .card{
+        min-height:720px;
+
+        padding:40px 30px 25px;
+    }
+
+    .profile{
+        width:105px;
+        height:105px;
+    }
+
+    .title{
+        font-size:24px;
+    }
+
+    .subtitle{
+        font-size:16px;
+    }
+
+    .market{
+        font-size:12px;
+    }
+
+    .telegram{
+        font-size:14px;
+
+        min-height:52px;
+    }
+
+    .features{
+        font-size:12px;
+    }
+
+    .warning{
+        font-size:9px;
+    }
+
+    .footer{
+        font-size:10px;
+    }
+}
+
+</style>
+
 </head>
+
+
 <body>
 
-    <div class="card">
-        <div class="header-text">WORK FROM HOME 🏠</div>
-        
-        <div class="logo-container">
-            <img src="logo.png" alt="Profile Logo">
+<!-- ================= MAIN CARD ================= -->
+
+<div class="card">
+
+
+    <!-- ================= PROFILE PHOTO ================= -->
+
+    <img
+        src="profile.jpg"
+        alt="VIP Trader"
+        class="profile"
+    >
+
+
+    <!-- ================= MAIN TITLE ================= -->
+
+    <h1 class="title">
+        3 piont trader
+
+
+    </h1>
+
+
+    <!-- ================= SUBTITLE ================= -->
+
+    <div class="subtitle">
+        Daily Market Updates
+    </div>
+
+
+    <!-- ================= MARKET ================= -->
+
+    <div class="market">
+        NIFTY · BANKNIFTY · STOCK OPTIONS
+    </div>
+
+
+    <!-- ================= TELEGRAM BUTTON ================= -->
+
+    <a
+        href="https://t.me/+nvUuTx7XKN03MzU1"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="telegram"
+        onclick="fbq('track','Lead');"
+    >
+        Join Free Telegram Channel
+    </a>
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <div class="features">
+
+        <div>
+            ✓ Daily Market Updates
         </div>
 
-        <div class="features">
-            <div class="feature-item">
-                <span class="check-icon">✅</span>
-                <span><strong>STUDENTS 📚</strong> पढ़ाई के साथ EXTRA INCOME</span>
-            </div>
-            <div class="feature-item">
-                <span class="check-icon">✅</span>
-                <span><strong>HOUSEWIFE 🏠</strong> खाली समय का सही इस्तेमाल</span>
-            </div>
-            <div class="feature-item">
-                <span class="check-icon">✅</span>
-                <span><strong>JOB SEEKERS 💼</strong> के नए SOURCE</span>
-            </div>
-            <div class="feature-item">
-                <span class="check-icon">✅</span>
-                <span><strong>Handwriting Work Guidance</strong></span>
-            </div>
+        <div>
+            ✓ F&amp;O Views for Educational Purposes
         </div>
 
-        <a href="https://t.me/+MP0rIDYLn0s1OGJl" class="btn-telegram">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" class="telegram-icon" alt="TG">
-            APPLY NOW (TELEGRAM)
+        <div>
+            ✓ Market Learning &amp; Analysis
+        </div>
+
+    </div>
+
+
+    <!-- ================= WARNING ================= -->
+
+    <div class="warning">
+
+        Market investments are subject to market risks.
+        Please consider your objectives and risk tolerance before making any investment decision.
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <div class="footer">
+
+        Managed by
+
+        <a
+            href="https://t.me/+60VgI7emtM83ZGY9"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Yash Ads
         </a>
 
-        <div class="footer-note">
-            <span class="fire">🔥</span> Hurry! Limited Slots Available
-        </div>
     </div>
+
+
+</div>
 
 </body>
 </html>
